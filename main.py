@@ -6,7 +6,7 @@ from sqlalchemy import Integer, String
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'averyverysecretkey'
+app.config['SECRET_KEY'] = 'your-secret-key'
 
 # CREATE DATABASE
 class Base(DeclarativeBase):
